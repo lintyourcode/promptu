@@ -15,6 +15,9 @@ class FindMatchingColor:
         return f'What color goes well with {
             NaturalList(items=self.existing_colors, conjunction='and')
         }?'
+
+# Prints "What color goes well with blue, purple and white?"
+print(FindMatchingColor(['blue', 'purple', 'white']))
 ```
 
 ## Prompting Utilities
