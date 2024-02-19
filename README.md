@@ -14,6 +14,17 @@ def find_matching_color(existing_colors):
 print(find_matching_color(['blue', 'purple', 'white']))
 ```
 
+## Using in Langchain
+
+```py
+runnable = (
+    {'prompt': RunnableLambda(find_matching_color)}
+    | PromptTemplate.from_template('{prompt}')
+    | model
+)
+runnable.invoke(['blue', 'purple', 'white'])
+```
+
 ## Prompting Utilities
 
 ### `natural_list()`
