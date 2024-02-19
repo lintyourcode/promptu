@@ -47,8 +47,7 @@ Selects the singular or plural form of a word based on the number of items.
 plural(template: str, items: List)
 ```
 
-**Template rules:**
+**Template syntax:**
 
 - `(str1|str2)` evaluates to `str1` if the number of items is 1, otherwise
   `str2`.
-- `(str)` evaluates to `str` if the number of items is not 1.
