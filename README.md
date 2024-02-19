@@ -8,9 +8,7 @@
 from promptu import natural_list
 
 def find_matching_color(existing_colors):
-    return f'What color goes well with {
-        natural_list(items=existing_colors, conjunction='and')
-    }?'
+    return f'What color goes well with {natural_list(items=existing_colors, conjunction="and")}?'
 
 # Prints "What color goes well with blue, purple and white?"
 print(find_matching_color(['blue', 'purple', 'white']))
