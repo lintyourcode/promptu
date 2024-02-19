@@ -1,6 +1,6 @@
 # Promptu
 
-> Prompt engineering library for Python
+> Natural language generation utilities for prompt engineering
 
 ## Example
 
