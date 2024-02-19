@@ -1,4 +1,4 @@
 from promptu.natural_list import NaturalList
-from promptu.plural import Plural
+from promptu.plural import plural
 
-__all__ = ["NaturalList", "Plural"]
+__all__ = ["NaturalList", "plural"]

@@ -32,14 +32,14 @@ Formats a list of items as a natural language list.
 NaturalList(items: List, conjunction: str)
 ```
 
-### `Plural`
+### `plural()`
 
 Selects the singular or plural form of a word based on the number of items.
 
 **Syntax:**
 
 ```py
-Plural(template: str, items: List)
+plural(template: str, items: List)
 ```
 
 **Template rules:**
