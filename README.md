@@ -2,6 +2,12 @@
 
 > Natural language generation utilities for prompt engineering
 
+## Installation
+
+```sh
+pip install promptu
+```
+
 ## Example
 
 ```py
