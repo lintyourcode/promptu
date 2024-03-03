@@ -11,7 +11,8 @@ def _prefix_item(items: Any, index: int, conjunction: str) -> str:
 
 
 def join(items: List, conjunction: str) -> str:
-    """Format a list of items as a natural language list.
+    """
+    Format a list of items as a natural language list.
 
     :param items: The items to format.
     :param conjunction: The conjunction to use before the last item. For
