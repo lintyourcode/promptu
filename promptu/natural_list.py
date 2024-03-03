@@ -1,7 +1,7 @@
-from typing import Any, List
+from typing import Iterable
 
 
-def _prefix_item(items: Any, index: int, conjunction: str) -> str:
+def _prefix_item(items: Iterable, index: int, conjunction: str) -> str:
     item = items[index]
     if index == 0:
         return f"{item}"
@@ -10,7 +10,7 @@ def _prefix_item(items: Any, index: int, conjunction: str) -> str:
     return f", {item}"
 
 
-def join(items: List, conjunction: str) -> str:
+def join(items: Iterable, conjunction: str) -> str:
     """
     Format a list of items as a natural language list.
 

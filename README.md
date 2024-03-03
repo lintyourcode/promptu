@@ -34,7 +34,7 @@ Formats a list of items as a natural language list.
 **Syntax:**
 
 ```py
-join(items: List, conjunction: str)
+join(items: Iterable, conjunction: str)
 ```
 
 ### `pluralize()`
