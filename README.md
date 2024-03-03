@@ -46,3 +46,17 @@ Selects the singular or plural form of a word based on the number of items.
 ```py
 pluralize(singular: str, plural: str, items: Iterable)
 ```
+
+### `truncate()`
+
+Truncates a string to a maximum length. If the text is longer than the maximum
+length, all characters after the maximum length are replaced with the suffix.
+
+**Syntax:**
+
+```py
+truncate(
+    text: str, max_length: int, mode=TruncateMode.CHARACTER, suffix="..."
+) -> str
+```
+
