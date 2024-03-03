@@ -44,10 +44,5 @@ Selects the singular or plural form of a word based on the number of items.
 **Syntax:**
 
 ```py
-plural(template: str, items: List)
+plural(singular: str, plural: str, items: List)
 ```
-
-**Template syntax:**
-
-- `(str1|str2)` evaluates to `str1` if the number of items is 1, otherwise
-  `str2`.
