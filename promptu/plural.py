@@ -1,7 +1,7 @@
 from typing import List
 
 
-def plural(singular: str, plural: str, items: List) -> str:
+def pluralize(singular: str, plural: str, items: List) -> str:
     """
     Select the singular or plural form of a word based on the number of items.
 

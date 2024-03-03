@@ -1,4 +1,4 @@
 from promptu.natural_list import join
-from promptu.plural import plural
+from promptu.plural import pluralize
 
-__all__ = ["join", "plural"]
+__all__ = ["join", "pluralize"]

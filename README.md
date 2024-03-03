@@ -37,12 +37,12 @@ Formats a list of items as a natural language list.
 join(items: List, conjunction: str)
 ```
 
-### `plural()`
+### `pluralize()`
 
 Selects the singular or plural form of a word based on the number of items.
 
 **Syntax:**
 
 ```py
-plural(singular: str, plural: str, items: List)
+pluralize(singular: str, plural: str, items: List)
 ```
