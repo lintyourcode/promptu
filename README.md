@@ -44,5 +44,5 @@ Selects the singular or plural form of a word based on the number of items.
 **Syntax:**
 
 ```py
-pluralize(singular: str, plural: str, items: List)
+pluralize(singular: str, plural: str, items: Iterable)
 ```
