@@ -34,7 +34,7 @@ Formats a list of items as a natural language list.
 **Syntax:**
 
 ```py
-join(items: Iterable, conjunction: str)
+join(items: Iterable, conjunction: str) -> str
 ```
 
 ### `pluralize()`
@@ -44,7 +44,7 @@ Selects the singular or plural form of a word based on the number of items.
 **Syntax:**
 
 ```py
-pluralize(singular: str, plural: str, items: Iterable)
+pluralize(singular: str, plural: str, items: Iterable) -> str
 ```
 
 ### `truncate()`
