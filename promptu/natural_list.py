@@ -10,7 +10,7 @@ def _prefix_item(items: Any, index: int, conjunction: str) -> str:
     return f", {item}"
 
 
-def natural_list(items: List, conjunction: str) -> str:
+def join(items: List, conjunction: str) -> str:
     """Format a list of items as a natural language list.
 
     :param items: The items to format.

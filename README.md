@@ -5,10 +5,10 @@
 ## Example
 
 ```py
-from promptu import natural_list
+from promptu import join
 
 def find_matching_color(existing_colors):
-    return f'What color goes well with {natural_list(items=existing_colors, conjunction="and")}?'
+    return f'What color goes well with {join(items=existing_colors, conjunction="and")}?'
 
 # Prints "What color goes well with blue, purple and white?"
 print(find_matching_color(['blue', 'purple', 'white']))
@@ -27,14 +27,14 @@ runnable.invoke(['blue', 'purple', 'white'])
 
 ## Prompting Utilities
 
-### `natural_list()`
+### `join()`
 
 Formats a list of items as a natural language list.
 
 **Syntax:**
 
 ```py
-natural_list(items: List, conjunction: str)
+join(items: List, conjunction: str)
 ```
 
 ### `plural()`
