@@ -30,12 +30,13 @@ def truncate(
     """
     Truncate a string to a maximum length.
 
-    If the text is longer than the maximum length, all characters after the
-    maximum length are replaced with the suffix.
+    If the text is longer than the maximum length, all characters or lines after
+    the maximum length are replaced with the suffix.
 
     :param text: Text to truncate.
-    :param max_length: Maximum length of the resulting text, not including the
-        suffix.
+    :param max_length: Maximum length of the resulting text when `mode` is
+        CHARACTER, or maximum number of lines when `mode` is LINE, not including
+        the suffix.
     :param mode: Unit of `max_length`.
     :param suffix: Suffix to append if the text is truncated.
 
