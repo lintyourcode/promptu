@@ -1,6 +1,9 @@
 # Promptu
 
-> Natural language generation utilities for prompt engineering
+> Write dynamic prompts as natural language
+
+Promptu provides a suite of natural language generation utilities for prompt
+engineers.
 
 ## Installation
 
