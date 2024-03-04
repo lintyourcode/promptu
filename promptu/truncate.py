@@ -24,9 +24,7 @@ def _truncate_by_line(text: str, max_length: int, suffix: str) -> str:
 {suffix}"""
 
 
-def truncate(
-    text: str, max_length: int, mode=TruncateMode.CHARACTER, suffix="..."
-) -> str:
+def truncate(text: str, max_length: int, mode=None, suffix="...") -> str:
     """
     Truncate a string to a maximum length.
 
@@ -45,6 +43,8 @@ def truncate(
     :raises ValueError: If `mode` is not a valid truncation mode.
     """
 
+    if mode is None:
+        mode = TruncateMode.CHARACTER
     if mode == TruncateMode.CHARACTER:
         return _truncate_by_character(text, max_length, suffix)
     elif mode == TruncateMode.LINE:
