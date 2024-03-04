@@ -5,6 +5,11 @@
 Promptu provides a suite of natural language generation utilities for prompt
 engineers.
 
+## Project Status
+
+:warning: This project is currently in its infancy. Please report bugs and
+expect breaking changes.
+
 ## Installation
 
 ```sh
