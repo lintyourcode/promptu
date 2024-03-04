@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Necessary for semantic-release to analyze commits
+          persist-credentials: true  # Allows pushing changes back to repository
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          poetry install
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: poetry run semantic-release
+
+      - name: Push changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git push origin main --follow-tags
