@@ -49,7 +49,7 @@ Formats a list of items as a natural language list.
 **Syntax:**
 
 ```py
-join(items: Iterable, conjunction: str) -> str
+join(items: Sequence, conjunction: str) -> str
 ```
 
 ### `pluralize()`
