@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "promptu"
 version = "0.1.0"
-description = ""
+description = "Write dynamic LLM prompts as natural language"
 authors = ["David <161997989+lintyourcode@users.noreply.github.com>"]
 readme = "README.md"
 
