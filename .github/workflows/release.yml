@@ -32,4 +32,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: poetry run semantic-release
+        run: poetry run semantic-release version
