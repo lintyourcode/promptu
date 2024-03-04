@@ -24,13 +24,12 @@ jobs:
           pip install poetry
           poetry install
 
+      - name: Configure git
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: poetry run semantic-release
-
-      - name: Push changes
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git push origin main --follow-tags
