@@ -74,3 +74,8 @@ truncate(
     text: str, max_length: int, mode=TruncateMode.CHARACTER, suffix="..."
 ) -> str
 ```
+
+## Contributing
+
+PRs are welcome! Please add or update the relevant unit tests and format the
+project with `black .`
