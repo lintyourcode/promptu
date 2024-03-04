@@ -68,4 +68,3 @@ truncate(
     text: str, max_length: int, mode=TruncateMode.CHARACTER, suffix="..."
 ) -> str
 ```
-
