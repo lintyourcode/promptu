@@ -3,7 +3,8 @@
 > Write dynamic LLM prompts as natural language
 
 Promptu provides a suite of natural language generation utilities for prompt
-engineers.
+engineers, such as truncation, pluralization and natural language list
+formatting.
 
 ## Project Status
 
