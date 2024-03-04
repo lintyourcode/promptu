@@ -1,7 +1,7 @@
-from typing import Iterable
+from typing import Sized
 
 
-def pluralize(singular: str, plural: str, items: Iterable) -> str:
+def pluralize(singular: str, plural: str, items: Sized) -> str:
     """
     Select the singular or plural form of a word based on the number of items.
 
