@@ -1,0 +1,6 @@
+## What's Changed {% for type_, commits in release["elements"] | dictsort %}{%- if type_ in ["build", "breaking", "feature", "fix", "performance"] %}
+
+### {{ type_ | capitalize }}
+{% for commit in commits %}
+- {{ commit.descriptions[0].capitalize() }} [[`{{ commit.short_hash }}`]]({{ commit.hexsha | commit_hash_url }}) ({{commit.commit.author.name}})
+{%- endfor %}{% endif %}{% endfor %}
